@@ -32,5 +32,21 @@ class ViewController: UIViewController {
     @IBAction func regButton(_ sender: UIButton) {
     }
     
+    @objc func keyboardWasShown(notification: Notification) {
+        let info = notification.userInfo as NSDictionary?
+        let keyboardSize = (info?.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue).cgRectValue.size
+        let contentsInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+        
+        scrollView.contentInset = contentsInsets
+        scrollView.scrollIndicatorInsets = contentsInsets
+    }
+    
+    @objc func keyboardWasHidden(notification: Notification) {
+        let contentsInsets = UIEdgeInsets.zero
+        
+        scrollView.contentInset = contentsInsets
+        scrollView.scrollIndicatorInsets = contentsInsets
+    }
+    
 }
 
