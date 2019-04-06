@@ -18,11 +18,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(hideKeybooard))
+        scrollView.addGestureRecognizer(tapGR)
     }
     
     @IBAction func logInButton(_ sender: UIButton) {
-        if usernameInput.text == "admin" && passwordInput.text == "password" {
+        if usernameInput.text == "" && passwordInput.text == "" {
             print("Authorization successfull")
         } else {
             print("Access denied")
@@ -53,6 +55,10 @@ class ViewController: UIViewController {
         
         scrollView.contentInset = contentsInsets
         scrollView.scrollIndicatorInsets = contentsInsets
+    }
+    
+    @objc func hideKeybooard() {
+        scrollView.endEditing(true)
     }
     
 }
