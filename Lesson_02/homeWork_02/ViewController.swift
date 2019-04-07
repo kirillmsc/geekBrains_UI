@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         if usernameInput.text == "" && passwordInput.text == "" {
             print("Authorization successfull")
         } else {
+            showError()
             print("Access denied")
         }
     }
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    @objc func keyboardWasShown(notification: Notification) {
+    @objc private func keyboardWasShown(notification: Notification) {
         let info = notification.userInfo as NSDictionary?
         let keyboardSize = (info?.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue).cgRectValue.size
         let contentsInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
@@ -50,16 +51,36 @@ class ViewController: UIViewController {
         scrollView.scrollIndicatorInsets = contentsInsets
     }
     
-    @objc func keyboardWasHidden(notification: Notification) {
+    @objc private func keyboardWasHidden(notification: Notification) {
         let contentsInsets = UIEdgeInsets.zero
         
         scrollView.contentInset = contentsInsets
         scrollView.scrollIndicatorInsets = contentsInsets
     }
     
-    @objc func hideKeybooard() {
+    @objc private func hideKeybooard() {
         scrollView.endEditing(true)
     }
     
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        guard identifier == "MainScreen" else {return true}
+//
+//        if usernameInput.text != "" && passwordInput.text != ""
+//        {
+//            return true
+//        } else {
+//            showError()
+//            return false
+//        }
+//    }
+    
+    func showError() {
+        let appAlert = UIAlertController(title: "Ошибка!", message: "Поля должны быть пустыми.", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default)
+        self.passwordInput.text = ""
+        appAlert.addAction(action)
+        
+        present(appAlert, animated: true)
+    }
 }
 
