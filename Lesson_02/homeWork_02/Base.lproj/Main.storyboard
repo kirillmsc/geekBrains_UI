@@ -395,6 +395,7 @@
         <image name="de67f23dad28fff66d1cf323d461fdf0" width="828" height="1792"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="MBW-VD-t9s"/>
         <segue reference="p4M-ms-neo"/>
     </inferredMetricsTieBreakers>
 </document>

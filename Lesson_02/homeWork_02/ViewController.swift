@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func logInButton(_ sender: UIButton) {
-        if usernameInput.text == "" && passwordInput.text == "" {
+        if shouldPerformSegue(withIdentifier: "Show Main Screen", sender: sender) {
             print("Authorization successfull")
         } else {
             showError()
@@ -62,17 +62,17 @@ class ViewController: UIViewController {
         scrollView.endEditing(true)
     }
     
-//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-//        guard identifier == "MainScreen" else {return true}
-//
-//        if usernameInput.text != "" && passwordInput.text != ""
-//        {
-//            return true
-//        } else {
-//            showError()
-//            return false
-//        }
-//    }
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard identifier == "Show Main Screen" else {return true}
+
+        if usernameInput.text == "" && passwordInput.text == ""
+        {
+            return true
+        } else {
+            showError()
+            return false
+        }
+    }
     
     func showError() {
         let appAlert = UIAlertController(title: "Ошибка!", message: "Поля должны быть пустыми.", preferredStyle: .alert)
