@@ -33,9 +33,9 @@ class GroupsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "GroupsCell", for: indexPath) as? GroupsCell else {fatalError("Cell cannot be dequeued")}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupsCell.reuseId, for: indexPath) as? GroupsCell else {fatalError("Cell cannot be dequeued")}
 
-        cell.groupsLabel.text = "Work"
+        cell.groupsCell.text = "Work"
 
         return cell
     }

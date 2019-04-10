@@ -11,12 +11,12 @@ import UIKit
 class GroupsCell: UITableViewCell {
     
     static let reuseId = "GroupsCell"
-    
-    @IBOutlet var groupsLabel: UILabel!
-    
+
+    @IBOutlet var groupsCell: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
 //    override func setSelected(_ selected: Bool, animated: Bool) {
