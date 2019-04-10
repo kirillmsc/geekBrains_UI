@@ -13,6 +13,8 @@ class FriendsCell: UITableViewCell {
     static let reuseId = "FriendsCell"
 
     @IBOutlet var friendsLabel: UILabel!
+    @IBOutlet var surnameLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
