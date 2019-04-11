@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct Groups {
+    let group: String
+}
+
+struct Recomend {
+    let group: String
+}

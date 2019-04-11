@@ -22,14 +22,6 @@ class PhotoViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoViewCell.reuseId, for: indexPath) as? PhotoViewCell else {fatalError("No")}
     
-//        @IBOutlet var infoViewCell: UIImageView!
-//        @IBOutlet var nameInfoLabel: UILabel!
-//        @IBOutlet var surnameInfoLabel: UILabel!
-//        @IBOutlet var yearsInfoLabel: UILabel!
-//        @IBOutlet var cityInfoLabel: UILabel!
-        
-//        cell.
-    
         return cell
     }
 

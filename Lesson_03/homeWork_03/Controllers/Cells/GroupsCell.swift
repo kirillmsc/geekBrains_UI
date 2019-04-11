@@ -9,20 +9,11 @@
 import UIKit
 
 class GroupsCell: UITableViewCell {
-    
     static let reuseId = "GroupsCell"
 
     @IBOutlet var groupsCell: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
-
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
-
 }
