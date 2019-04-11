@@ -10,10 +10,10 @@ import UIKit
 
 class RecomendTableController: UITableViewController {
     
-    public let recomendations: [Recomend] = [
-        Recomend(group: "Serebro"),
-        Recomend(group: "Kadish"),
-        Recomend(group: "POP")
+    public let recomendations: [Groups] = [
+        Groups(group: "Serebro"),
+        Groups(group: "Kadish"),
+        Groups(group: "POP")
     ]
     
     override func viewDidLoad() {
@@ -31,4 +31,6 @@ class RecomendTableController: UITableViewController {
         
         return cell
     }
+    
+    
 }

@@ -440,8 +440,8 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BE-1a-A8u">
-                                            <rect key="frame" x="53" y="11.5" width="56" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="53" y="10" width="63.5" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -581,8 +581,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="groupName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boK-ev-cVP">
-                                            <rect key="frame" x="52.5" y="11" width="127" height="27.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <rect key="frame" x="52.5" y="11" width="102.5" height="27.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -605,6 +605,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="recomendCell" destination="boK-ev-cVP" id="3HI-UU-d48"/>
+                                    <segue destination="dQN-s3-deo" kind="unwind" unwindAction="addGroupWithSegue:" id="RBQ-s2-pBc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -618,6 +619,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ZU-Ry-8dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dQN-s3-deo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6264" y="441"/>
         </scene>

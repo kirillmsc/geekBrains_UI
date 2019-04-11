@@ -31,4 +31,28 @@ class GroupsTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
+            print("index path of delete: \(indexPath)")
+            completionHandler(true)
+        }
+        let swipeActionConfig = UISwipeActionsConfiguration(actions: [delete])
+        swipeActionConfig.performsFirstActionWithFullSwipe = false
+        return swipeActionConfig
+    }
+    
+    @IBAction func addGroup(segue: UIStoryboardSegue) {
+        if let recomendTableController = segue.source as? RecomendTableController,
+            let indexPath = recomendTableController.tableView.indexPathForSelectedRow {
+            let newGroup = recomendTableController.recomendations[indexPath.row]
+            
+            guard !groups.contains(where: { group -> Bool in
+                return group.group == newGroup.group
+            }) else {return}
+            self.groups.append(newGroup)
+            tableView.reloadData()
+        }
+    }
+    
 }
