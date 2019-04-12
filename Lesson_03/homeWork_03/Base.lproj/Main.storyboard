@@ -206,7 +206,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
-                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB5-z7-LKR">
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" restorationIdentifier="cancelButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB5-z7-LKR">
                                         <rect key="frame" x="102" y="622" width="95" height="40"/>
                                         <color key="backgroundColor" red="0.2389294505" green="0.18397435549999999" blue="0.68061566350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -225,7 +225,7 @@
                                             <action selector="logInButton:" destination="74O-Jr-ZYg" eventType="touchUpInside" id="msD-2u-Ig6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unc-Of-cjl">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="doneButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unc-Of-cjl">
                                         <rect key="frame" x="217" y="622" width="95" height="40"/>
                                         <color key="backgroundColor" red="0.23750322160000001" green="0.1831522059" blue="0.68171098070000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -572,9 +572,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="Search" showsCancelButton="YES" id="Vp8-zM-KgI">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits" textContentType="name"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecomendCell" rowHeight="50" id="XqR-vO-cCE" customClass="RecomendCell" customModule="homeWork_03" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XqR-vO-cCE" id="yI4-VC-bVI">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="49.5"/>
@@ -617,6 +626,9 @@
                     <navigationItem key="navigationItem" title="Recomendations" id="f4b-TM-1I9">
                         <barButtonItem key="backBarButtonItem" title="Back" id="znf-6F-cHx"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="Vp8-zM-KgI" id="IDm-Ef-CUr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ZU-Ry-8dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dQN-s3-deo" userLabel="Exit" sceneMemberID="exit"/>

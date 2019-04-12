@@ -10,7 +10,7 @@ import UIKit
 
 class RecomendCell: UITableViewCell {
     static let reuseId = "RecomendCell"
-
+    
     @IBOutlet var recomendCell: UILabel!
     
     override func awakeFromNib() {

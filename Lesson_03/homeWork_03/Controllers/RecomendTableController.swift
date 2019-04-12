@@ -10,7 +10,9 @@ import UIKit
 
 class RecomendTableController: UITableViewController {
     
-    public let recomendations: [Groups] = [
+    @IBOutlet var searchBar: UISearchBar!
+    
+    public var recomendations: [Groups] = [
         Groups(group: "Serebro"),
         Groups(group: "Kadish"),
         Groups(group: "POP")
@@ -26,9 +28,7 @@ class RecomendTableController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: RecomendCell.reuseId, for: indexPath) as? RecomendCell else {fatalError("No!")}
-    
         cell.recomendCell.text = recomendations[indexPath.row].group
-        
         return cell
     }
     
