@@ -33,7 +33,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Frog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SG-0M-9RG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom VK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SG-0M-9RG">
                                         <rect key="frame" x="20" y="120" width="374" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -357,12 +357,21 @@
                                                 <constraint firstAttribute="width" secondItem="0Ri-7Y-gqJ" secondAttribute="height" multiplier="1:1" id="TwH-Qx-hNK"/>
                                             </constraints>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWG-OP-3aP" customClass="LikeButton" customModule="homeWork_04" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="160" width="80" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="YMn-2Y-Mcc"/>
+                                                <constraint firstAttribute="width" constant="80" id="mvL-6j-zi1" customClass="Li"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="0Ri-7Y-gqJ" secondAttribute="bottom" id="54W-hU-PZV"/>
                                     <constraint firstItem="0Ri-7Y-gqJ" firstAttribute="top" secondItem="FeF-dm-OMZ" secondAttribute="top" id="BUl-jl-LFM"/>
+                                    <constraint firstItem="gWG-OP-3aP" firstAttribute="leading" secondItem="FeF-dm-OMZ" secondAttribute="leading" id="NBP-Df-2vb"/>
                                     <constraint firstItem="0Ri-7Y-gqJ" firstAttribute="leading" secondItem="FeF-dm-OMZ" secondAttribute="leading" id="oWc-Vz-YdN"/>
+                                    <constraint firstAttribute="bottom" secondItem="gWG-OP-3aP" secondAttribute="bottom" id="sTm-gS-z1b"/>
                                 </constraints>
                                 <size key="customSize" width="200" height="200"/>
                                 <connections>
@@ -398,11 +407,11 @@
             </objects>
             <point key="canvasLocation" x="3668.115942028986" y="116.51785714285714"/>
         </scene>
-        <!--Item 2-->
+        <!--Groups-->
         <scene sceneID="bZ5-mO-91L">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Qa-lL-jRd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="kx1-u4-FZH"/>
+                    <tabBarItem key="tabBarItem" title="Groups" id="kx1-u4-FZH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="geT-Mt-GLT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -478,11 +487,11 @@
             </objects>
             <point key="canvasLocation" x="5405.7971014492759" y="440.625"/>
         </scene>
-        <!--Item 1-->
+        <!--Friends-->
         <scene sceneID="rtT-4t-rh0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kbc-F7-vfl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Fsa-jG-i9g"/>
+                    <tabBarItem key="tabBarItem" title="Friends" id="Fsa-jG-i9g"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lVv-Sy-9a2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -506,43 +515,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendsCell" rowHeight="51" id="ccV-5B-xUu" customClass="FriendsCell" customModule="homeWork_04" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="51"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendsCell" rowHeight="78" id="ccV-5B-xUu" customClass="FriendsCell" customModule="homeWork_04" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="78"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ccV-5B-xUu" id="blo-1U-COa">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="77.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn4-O4-YuS">
-                                            <rect key="frame" x="70" y="11.5" width="64" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrW-iL-88e" customClass="avatarShadow" customModule="homeWork_04" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="1.5" width="50" height="50"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrW-iL-88e" customClass="AvatarShadow" customModule="homeWork_04" customModuleProvider="target">
+                                            <rect key="frame" x="1" y="1" width="60" height="60"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                    <real key="value" value="1"/>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                    <size key="value" width="0.0" height="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                    <color key="value" red="0.23750322160000001" green="0.1831522059" blue="0.68171098070000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                    <real key="value" value="5"/>
+                                                    <real key="value" value="8"/>
                                                 </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="25"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                    <size key="value" width="0.0" height="2"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="1"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="M0obmR3N4Vc" translatesAutoresizingMaskIntoConstraints="NO" id="vUA-54-9WB" customClass="avatarPic" customModule="homeWork_04" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="1.5" width="50" height="50"/>
+                                            <rect key="frame" x="1" y="1" width="60" height="60"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="XBI-gT-tdu"/>
+                                                <constraint firstAttribute="width" constant="60" id="XBI-gT-tdu"/>
                                                 <constraint firstAttribute="width" secondItem="vUA-54-9WB" secondAttribute="height" multiplier="1:1" id="ln7-83-4VU"/>
-                                                <constraint firstAttribute="height" constant="50" id="nzV-ZF-Cb6"/>
+                                                <constraint firstAttribute="height" constant="60" id="nzV-ZF-Cb6"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -559,28 +562,34 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn4-O4-YuS">
+                                            <rect key="frame" x="69" y="23" width="64" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwh-ad-1Qi">
-                                            <rect key="frame" x="141" y="11.5" width="97" height="30"/>
+                                            <rect key="frame" x="141" y="23" width="97" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="vUA-54-9WB" firstAttribute="top" secondItem="blo-1U-COa" secondAttribute="top" constant="1" id="0Qk-fI-3q0"/>
-                                        <constraint firstItem="mrW-iL-88e" firstAttribute="leading" secondItem="vUA-54-9WB" secondAttribute="leading" id="O13-tm-wqo"/>
-                                        <constraint firstItem="vUA-54-9WB" firstAttribute="leading" secondItem="blo-1U-COa" secondAttribute="leading" id="RlP-rK-Lxk"/>
-                                        <constraint firstItem="mrW-iL-88e" firstAttribute="trailing" secondItem="vUA-54-9WB" secondAttribute="trailing" id="Swy-8j-b8n"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mwh-ad-1Qi" secondAttribute="trailing" constant="20" id="Y9o-ka-Lve"/>
-                                        <constraint firstItem="Fn4-O4-YuS" firstAttribute="top" secondItem="blo-1U-COa" secondAttribute="topMargin" id="f6E-Hj-w8d"/>
-                                        <constraint firstAttribute="bottom" secondItem="vUA-54-9WB" secondAttribute="bottom" constant="1" id="ic4-VF-KcB"/>
-                                        <constraint firstItem="mwh-ad-1Qi" firstAttribute="leadingMargin" secondItem="Fn4-O4-YuS" secondAttribute="trailing" constant="15" id="j3F-GR-k9T"/>
-                                        <constraint firstItem="Fn4-O4-YuS" firstAttribute="leading" secondItem="vUA-54-9WB" secondAttribute="trailing" constant="20" id="ruD-eN-AR8"/>
-                                        <constraint firstItem="mwh-ad-1Qi" firstAttribute="centerY" secondItem="blo-1U-COa" secondAttribute="centerY" id="vq9-Gl-Qte"/>
-                                        <constraint firstItem="mrW-iL-88e" firstAttribute="top" secondItem="blo-1U-COa" secondAttribute="top" constant="1" id="wTE-UI-L3t"/>
-                                        <constraint firstItem="vUA-54-9WB" firstAttribute="centerY" secondItem="blo-1U-COa" secondAttribute="centerY" id="yEx-2d-Hep"/>
-                                        <constraint firstAttribute="bottom" secondItem="mrW-iL-88e" secondAttribute="bottom" constant="1" id="yct-xE-vEe"/>
-                                        <constraint firstItem="mwh-ad-1Qi" firstAttribute="centerY" secondItem="Fn4-O4-YuS" secondAttribute="centerY" id="zAQ-wn-mwi"/>
+                                        <constraint firstItem="mrW-iL-88e" firstAttribute="width" secondItem="vUA-54-9WB" secondAttribute="width" id="10u-W5-Lbl"/>
+                                        <constraint firstItem="mwh-ad-1Qi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fn4-O4-YuS" secondAttribute="leading" constant="10" id="APB-30-QZK"/>
+                                        <constraint firstItem="Fn4-O4-YuS" firstAttribute="leading" secondItem="vUA-54-9WB" secondAttribute="trailing" constant="8" id="Hay-8o-5vq"/>
+                                        <constraint firstItem="vUA-54-9WB" firstAttribute="leading" secondItem="blo-1U-COa" secondAttribute="leading" constant="1" id="LA6-DB-wp2"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mwh-ad-1Qi" secondAttribute="trailing" constant="20" symbolic="YES" id="MRM-WK-MMl"/>
+                                        <constraint firstItem="mwh-ad-1Qi" firstAttribute="baseline" secondItem="Fn4-O4-YuS" secondAttribute="baseline" id="ckI-cn-CWB"/>
+                                        <constraint firstItem="mrW-iL-88e" firstAttribute="centerY" secondItem="blo-1U-COa" secondAttribute="centerY" constant="0.25" id="da9-xU-hLg"/>
+                                        <constraint firstItem="Fn4-O4-YuS" firstAttribute="top" secondItem="blo-1U-COa" secondAttribute="topMargin" constant="12" id="f6E-Hj-w8d"/>
+                                        <constraint firstItem="mrW-iL-88e" firstAttribute="height" secondItem="vUA-54-9WB" secondAttribute="height" id="gnG-SO-eIG"/>
+                                        <constraint firstItem="vUA-54-9WB" firstAttribute="centerY" secondItem="blo-1U-COa" secondAttribute="centerY" id="het-1Z-h6g"/>
+                                        <constraint firstAttribute="bottom" secondItem="vUA-54-9WB" secondAttribute="bottom" constant="1" id="ip7-vV-gE0"/>
+                                        <constraint firstItem="mrW-iL-88e" firstAttribute="leading" secondItem="vUA-54-9WB" secondAttribute="leading" id="kDS-bg-Y9Y"/>
+                                        <constraint firstItem="vUA-54-9WB" firstAttribute="top" secondItem="blo-1U-COa" secondAttribute="top" constant="1" id="s5e-8b-mpT"/>
+                                        <constraint firstItem="mwh-ad-1Qi" firstAttribute="leading" secondItem="Fn4-O4-YuS" secondAttribute="trailing" constant="8" symbolic="YES" id="wNH-cN-wHM"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

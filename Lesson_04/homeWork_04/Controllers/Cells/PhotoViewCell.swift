@@ -13,5 +13,6 @@ class PhotoViewCell: UICollectionViewCell {
     static let reuseId = "PhotoViewCell"
     
     @IBOutlet var iconImageView: UIImageView!
+    @IBOutlet var likeCount: UILabel!
     
 }

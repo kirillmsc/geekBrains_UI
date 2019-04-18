@@ -11,11 +11,23 @@ import UIKit
 class FriendsViewController: UITableViewController {
     
     public let friends: [Friends] = [
-        Friends(name: "Nikita", surname: "Surkot", yo: 21, city: "Moscow"),
-        Friends(name: "Vasiliy", surname: "Ivaev", yo: 26, city: "Køln"),
-        Friends(name: "Ann", surname: "Kiunova", yo: 25, city: "Verna"),
-        Friends(name: "Vladimir", surname: "Vorotin", yo: 25, city: "Moscow"),
-        Friends(name: "Maks", surname: "Volchinin", yo: 26, city: "Moscow")
+        Friends(name: "Nikita", surname: "Surkot"),
+        Friends(name: "Vasiliy", surname: "Ivaev"),
+        Friends(name: "Ann", surname: "Kiunova"),
+        Friends(name: "Vladimir", surname: "Vorotin"),
+        Friends(name: "Maks", surname: "Volchinin"),
+        Friends(name: "Alex", surname: "Minin"),
+        Friends(name: "Dima", surname: "Volkov"),
+        Friends(name: "Kir", surname: "Klimin"),
+        Friends(name: "Anton", surname: "Gerov"),
+        Friends(name: "German", surname: "Solomov"),
+        Friends(name: "Dima", surname: "Voinov"),
+        Friends(name: "Maks", surname: "Minin"),
+        Friends(name: "Dima", surname: "Volkov"),
+        Friends(name: "Kir", surname: "Klimin"),
+        Friends(name: "Dima", surname: "Gerov"),
+        Friends(name: "Maks", surname: "Solomov"),
+        Friends(name: "Maks", surname: "Voinov")
     ]
 
     override func viewDidLoad() {

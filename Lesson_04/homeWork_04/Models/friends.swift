@@ -11,6 +11,4 @@ import Foundation
 struct Friends {
     let name: String
     let surname: String
-    let yo: Int
-    let city: String
 }
