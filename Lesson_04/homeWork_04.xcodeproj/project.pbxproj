@@ -15,6 +15,7 @@
 		795E02DE225DF27200A8DE0F /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E02DC225DF27200A8DE0F /* RegistrationController.swift */; };
 		795E02DF225DF27200A8DE0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E02DD225DF27200A8DE0F /* ViewController.swift */; };
 		795E02E2225DF2A700A8DE0F /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E02E1225DF2A700A8DE0F /* FriendsViewController.swift */; };
+		79B35DB22268857500982173 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B35DB02268857500982173 /* LikeButton.swift */; };
 		79B676A7226224F800225133 /* lesson_4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B676A6226224F800225133 /* lesson_4.storyboard */; };
 		79B676AC22622EF100225133 /* avatarCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B676AB22622EF100225133 /* avatarCorner.swift */; };
 		79B676B22262AAD200225133 /* avatarShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B676B12262AAD200225133 /* avatarShadow.swift */; };
@@ -39,6 +40,7 @@
 		795E02DC225DF27200A8DE0F /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		795E02DD225DF27200A8DE0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		795E02E1225DF2A700A8DE0F /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		79B35DB02268857500982173 /* LikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		79B676A6226224F800225133 /* lesson_4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = lesson_4.storyboard; sourceTree = "<group>"; };
 		79B676AB22622EF100225133 /* avatarCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarCorner.swift; sourceTree = "<group>"; };
 		79B676B12262AAD200225133 /* avatarShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarShadow.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		795E02E0225DF28400A8DE0F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				79B35DAE2268857500982173 /* Controls */,
 				79D82D0B225E2B8E004C2059 /* Cells */,
 				795E02E1225DF2A700A8DE0F /* FriendsViewController.swift */,
 				795E02DC225DF27200A8DE0F /* RegistrationController.swift */,
@@ -105,6 +108,14 @@
 				79D82D22225F264B004C2059 /* RecomendTableController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		79B35DAE2268857500982173 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				79B35DB02268857500982173 /* LikeButton.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 		79B676A52262249A00225133 /* UI */ = {
@@ -232,6 +243,7 @@
 				79B676B22262AAD200225133 /* avatarShadow.swift in Sources */,
 				795E02DE225DF27200A8DE0F /* RegistrationController.swift in Sources */,
 				7954550C225DE20900CA3DBE /* AppDelegate.swift in Sources */,
+				79B35DB22268857500982173 /* LikeButton.swift in Sources */,
 				79D82D1C225E8EEA004C2059 /* friends.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

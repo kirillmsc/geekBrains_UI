@@ -14,7 +14,7 @@ class FriendsCell: UITableViewCell {
 
     @IBOutlet var friendsLabel: UILabel!
     @IBOutlet var surnameLabel: UILabel!
-    @IBOutlet var avatarPic: avatarPic!
+    @IBOutlet var avatarPic: ClippedView!
     
     
     override func awakeFromNib() {
