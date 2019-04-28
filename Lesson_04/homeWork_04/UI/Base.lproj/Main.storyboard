@@ -361,7 +361,7 @@
                                             <rect key="frame" x="0.0" y="160" width="80" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="YMn-2Y-Mcc"/>
-                                                <constraint firstAttribute="width" constant="80" id="mvL-6j-zi1" customClass="Li"/>
+                                                <constraint firstAttribute="width" constant="80" id="mvL-6j-zi1"/>
                                             </constraints>
                                         </view>
                                     </subviews>
