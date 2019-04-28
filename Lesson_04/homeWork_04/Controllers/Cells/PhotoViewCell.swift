@@ -22,7 +22,7 @@ class PhotoViewCell: UICollectionViewCell {
                             usingSpringWithDamping: 0.8,
                             initialSpringVelocity: 0.2,
                             animations: {
-                                self.iconImageView.bounds = CGRect(x: 0, y: 0, width: 100, height: 100)
+                                self.iconImageView.bounds = CGRect(x: 0, y: 0, width: 150, height: 150)
         }, completion: nil)
         self.iconImageView.startAnimating()
     }
