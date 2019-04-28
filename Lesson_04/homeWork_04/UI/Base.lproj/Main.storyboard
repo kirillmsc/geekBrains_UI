@@ -22,7 +22,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="882" height="896"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLR-8p-Yv8">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+=======
+                                <rect key="frame" x="0.0" y="44" width="414" height="616"/>
+>>>>>>> parent of f6dcfee... Add animation on the photo
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EIS-3X-8Es">
                                         <rect key="frame" x="102" y="321" width="210" height="40"/>
@@ -106,30 +110,53 @@
                                     <constraint firstItem="EIS-3X-8Es" firstAttribute="centerX" secondItem="CRW-Rd-cCG" secondAttribute="centerX" id="Ksb-iO-os4"/>
                                     <constraint firstItem="kT1-Qq-4eG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EIS-3X-8Es" secondAttribute="leading" id="M9M-Za-Cgt"/>
                                     <constraint firstItem="kT1-Qq-4eG" firstAttribute="top" secondItem="EIS-3X-8Es" secondAttribute="bottom" constant="42" id="MeW-Oh-QvK"/>
+<<<<<<< HEAD
                                     <constraint firstAttribute="bottom" secondItem="Wnt-4s-SwA" secondAttribute="bottom" constant="419" id="UnK-oG-JvC"/>
+=======
+                                    <constraint firstAttribute="bottom" secondItem="Wnt-4s-SwA" secondAttribute="bottom" constant="183" id="UnK-oG-JvC"/>
+>>>>>>> parent of f6dcfee... Add animation on the photo
                                     <constraint firstAttribute="trailing" secondItem="Wnt-4s-SwA" secondAttribute="trailing" constant="102" id="VJk-Eb-zlR"/>
                                     <constraint firstItem="kT1-Qq-4eG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EIS-3X-8Es" secondAttribute="leading" id="W7M-SY-q1R"/>
                                     <constraint firstItem="Wnt-4s-SwA" firstAttribute="top" secondItem="EIS-3X-8Es" secondAttribute="bottom" constant="42" id="ZVp-cN-UzP"/>
                                     <constraint firstItem="Wnt-4s-SwA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EIS-3X-8Es" secondAttribute="trailing" id="aTy-jT-T25"/>
                                     <constraint firstItem="5SG-0M-9RG" firstAttribute="leading" secondItem="tLR-8p-Yv8" secondAttribute="leading" constant="20" id="aeu-lO-dzA"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5SG-0M-9RG" secondAttribute="trailing" id="hDb-pX-Xwb"/>
+<<<<<<< HEAD
                                     <constraint firstAttribute="height" constant="852" id="j2x-dV-2fV"/>
+=======
+                                    <constraint firstAttribute="height" constant="616" id="j2x-dV-2fV"/>
+>>>>>>> parent of f6dcfee... Add animation on the photo
                                     <constraint firstItem="Wnt-4s-SwA" firstAttribute="leading" secondItem="kT1-Qq-4eG" secondAttribute="trailing" constant="20" id="pYl-JF-jVf"/>
                                     <constraint firstItem="5SG-0M-9RG" firstAttribute="centerX" secondItem="tLR-8p-Yv8" secondAttribute="centerX" id="uH1-SY-Ggy"/>
                                     <constraint firstItem="Wnt-4s-SwA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kT1-Qq-4eG" secondAttribute="trailing" constant="8" symbolic="YES" id="xZa-d7-JrV"/>
                                 </constraints>
                             </scrollView>
+<<<<<<< HEAD
+=======
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="1491889575135214943" translatesAutoresizingMaskIntoConstraints="NO" id="HCX-aA-wc0">
+                                <rect key="frame" x="-13" y="660" width="259" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="Deo-mB-rJn"/>
+                                </constraints>
+                            </imageView>
+>>>>>>> parent of f6dcfee... Add animation on the photo
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nzM-uw-hN6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7H2-Ri-YPJ"/>
+                            <constraint firstAttribute="bottom" secondItem="HCX-aA-wc0" secondAttribute="bottom" constant="-15" id="BeH-vm-yKM"/>
                             <constraint firstAttribute="bottom" secondItem="nzM-uw-hN6" secondAttribute="bottom" id="IE8-rv-lfm"/>
                             <constraint firstItem="tLR-8p-Yv8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="M8d-8x-ncA"/>
+<<<<<<< HEAD
+=======
+                            <constraint firstItem="HCX-aA-wc0" firstAttribute="top" secondItem="tLR-8p-Yv8" secondAttribute="bottom" id="VO7-4A-FMA"/>
+>>>>>>> parent of f6dcfee... Add animation on the photo
                             <constraint firstAttribute="trailing" secondItem="nzM-uw-hN6" secondAttribute="trailing" constant="-468" id="WX0-cN-D5a"/>
                             <constraint firstItem="nzM-uw-hN6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bY6-Ul-WzW"/>
                             <constraint firstItem="nzM-uw-hN6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eTw-0c-iEp"/>
                             <constraint firstItem="tLR-8p-Yv8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hUU-Ec-sN8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tLR-8p-Yv8" secondAttribute="trailing" id="lgE-wy-n6w"/>
+                            <constraint firstItem="HCX-aA-wc0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-13" id="qj9-aC-Mop"/>
                             <constraint firstAttribute="bottom" secondItem="nzM-uw-hN6" secondAttribute="bottom" id="yDj-td-ri2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -893,12 +920,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1491889575135214943" width="1092" height="1037"/>
         <image name="M0obmR3N4Vc" width="2560" height="1707"/>
         <image name="chat" width="512" height="512"/>
         <image name="de67f23dad28fff66d1cf323d461fdf0" width="828" height="1792"/>
+<<<<<<< HEAD
         <image name="eye" width="512" height="512"/>
         <image name="heart_empty" width="64" height="64"/>
         <image name="kosmos" width="1000" height="541"/>
         <image name="vk-vkontakte-draw-logo" width="512" height="512"/>
+=======
+>>>>>>> parent of f6dcfee... Add animation on the photo
     </resources>
 </document>
