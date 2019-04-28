@@ -60,7 +60,12 @@ class LikeButton: UIControl {
     @objc func likeTapped() {
         like.toggle()
         heartImageView.image = like ? UIImage(named: "heart_filled") : UIImage(named: "heart_empty")
+<<<<<<< HEAD
         likeCounter.text = !like ? "0" : "1"
         likeCounter.textColor = !like ? .black : .red
+=======
+        likeCounter.text = like ? "1" : "0"
+        likeCounter.textColor = like ? .red : .black
+>>>>>>> next_lesson
     }
 }
