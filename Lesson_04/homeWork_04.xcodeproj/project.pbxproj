@@ -16,7 +16,6 @@
 		795E02DF225DF27200A8DE0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E02DD225DF27200A8DE0F /* ViewController.swift */; };
 		795E02E2225DF2A700A8DE0F /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E02E1225DF2A700A8DE0F /* FriendsViewController.swift */; };
 		79B35DB22268857500982173 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B35DB02268857500982173 /* LikeButton.swift */; };
-		79B676A7226224F800225133 /* lesson_4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B676A6226224F800225133 /* lesson_4.storyboard */; };
 		79B676AC22622EF100225133 /* avatarCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B676AB22622EF100225133 /* avatarCorner.swift */; };
 		79B676B22262AAD200225133 /* avatarShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B676B12262AAD200225133 /* avatarShadow.swift */; };
 		79D82D09225E2B7B004C2059 /* GroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D82D08225E2B7B004C2059 /* GroupsCell.swift */; };
@@ -41,7 +40,6 @@
 		795E02DD225DF27200A8DE0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		795E02E1225DF2A700A8DE0F /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		79B35DB02268857500982173 /* LikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
-		79B676A6226224F800225133 /* lesson_4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = lesson_4.storyboard; sourceTree = "<group>"; };
 		79B676AB22622EF100225133 /* avatarCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarCorner.swift; sourceTree = "<group>"; };
 		79B676B12262AAD200225133 /* avatarShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarShadow.swift; sourceTree = "<group>"; };
 		79D82D08225E2B7B004C2059 /* GroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCell.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 			children = (
 				7954550F225DE20900CA3DBE /* Main.storyboard */,
 				79545514225DE20A00CA3DBE /* LaunchScreen.storyboard */,
-				79B676A6226224F800225133 /* lesson_4.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -216,7 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79545516225DE20A00CA3DBE /* LaunchScreen.storyboard in Resources */,
-				79B676A7226224F800225133 /* lesson_4.storyboard in Resources */,
 				79545513225DE20A00CA3DBE /* Assets.xcassets in Resources */,
 				79545511225DE20900CA3DBE /* Main.storyboard in Resources */,
 			);
