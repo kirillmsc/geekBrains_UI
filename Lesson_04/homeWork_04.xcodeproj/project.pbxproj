@@ -26,6 +26,7 @@
 		79D82D1E225E8EF6004C2059 /* groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D82D1D225E8EF6004C2059 /* groups.swift */; };
 		79D82D23225F264B004C2059 /* RecomendTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D82D22225F264B004C2059 /* RecomendTableController.swift */; };
 		79D82D25225F26A4004C2059 /* RecomendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D82D24225F26A4004C2059 /* RecomendCell.swift */; };
+		79F28A59227DD702000D9F05 /* LoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F28A58227DD702000D9F05 /* LoadingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		79D82D1D225E8EF6004C2059 /* groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groups.swift; sourceTree = "<group>"; };
 		79D82D22225F264B004C2059 /* RecomendTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendTableController.swift; sourceTree = "<group>"; };
 		79D82D24225F26A4004C2059 /* RecomendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendCell.swift; sourceTree = "<group>"; };
+		79F28A58227DD702000D9F05 /* LoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				79D82D0C225E2D16004C2059 /* GroupsTableViewController.swift */,
 				79D82D18225E8DD4004C2059 /* PhotoViewController.swift */,
 				79D82D22225F264B004C2059 /* RecomendTableController.swift */,
+				79F28A58227DD702000D9F05 /* LoadingController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				79B676B22262AAD200225133 /* avatarShadow.swift in Sources */,
 				795E02DE225DF27200A8DE0F /* RegistrationController.swift in Sources */,
 				7954550C225DE20900CA3DBE /* AppDelegate.swift in Sources */,
+				79F28A59227DD702000D9F05 /* LoadingController.swift in Sources */,
 				79B35DB22268857500982173 /* LikeButton.swift in Sources */,
 				79D82D1C225E8EEA004C2059 /* friends.swift in Sources */,
 			);
