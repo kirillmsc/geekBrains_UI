@@ -8,18 +8,12 @@
 
 import UIKit
 
-<<<<<<< HEAD
-class FriendsViewController: UITableViewController {
-    
-    public let friends: [Friends] = [
-=======
 class FriendsViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet var searchBar: UISearchBar!
     
     var searchController: UISearchController!
     let friends: [Friends] = [
->>>>>>> animation
         Friends(name: "Nikita", surname: "Surkot"),
         Friends(name: "Vasiliy", surname: "Ivaev"),
         Friends(name: "Ann", surname: "Kiunova"),
@@ -32,45 +26,81 @@ class FriendsViewController: UITableViewController, UISearchBarDelegate {
         Friends(name: "German", surname: "Solomov"),
         Friends(name: "Dima", surname: "Voinov"),
         Friends(name: "Maks", surname: "Minin"),
-<<<<<<< HEAD
-        Friends(name: "Dima", surname: "Volkov"),
-        Friends(name: "Kir", surname: "Klimin"),
-=======
         Friends(name: "Dima", surname: "Solomov"),
         Friends(name: "Kir", surname: "Voinov"),
->>>>>>> animation
         Friends(name: "Dima", surname: "Gerov"),
         Friends(name: "Maks", surname: "Solomov"),
         Friends(name: "Maks", surname: "Voinov")
     ]
-<<<<<<< HEAD
 
-=======
-    
     var firstNameLetter = [String]()
     var friendsDict = [String : [Friends]]()
     var searchFriend = [Friends]()
     var search = false
     
->>>>>>> animation
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //let tapGR = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        //tableView.addGestureRecognizer(tapGR)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        sortedSections()
+        
+        //        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasHidden(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        //        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    private func sortedSections() {
+        firstNameLetter = []
+        friendsDict = [:]
+        
+        for friend in friends {
+            let friendNameKey = String(friend.name.prefix(1))
+            if var friendValue = friendsDict[friendNameKey] {
+                friendValue.append(friend)
+                friendsDict[friendNameKey] = friendValue
+            } else {
+                friendsDict[friendNameKey] = [friend]
+            }
+        }
+        
+        firstNameLetter = [String](friendsDict.keys)
+        firstNameLetter = firstNameLetter.sorted(by: {$0 < $1})
+        
+    }
+    
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        if search {
+            return 1
+        } else {
+            return firstNameLetter.count
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return friends.count
+        if search {
+            return searchFriend.count
+        } else {
+            let friendNameKey = firstNameLetter[section]
+            if let friendValue = friendsDict[friendNameKey] {
+                return friendValue.count
+            }
+        }
+        return 0
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-<<<<<<< HEAD
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsCell.reuseId, for: indexPath) as? FriendsCell else {fatalError("Cell cannot be dequeued")}
-
-        cell.friendsLabel.text = friends[indexPath.row].name
-        cell.surnameLabel.text = friends[indexPath.row].surname
-
-        return cell
-    }
-=======
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsCell.reuseId, for: indexPath) as? FriendsCell else { fatalError("Cell cannot be dequeued")}
         if search {
             cell.friendsLabel.text = searchFriend[indexPath.row].name
@@ -81,6 +111,8 @@ class FriendsViewController: UITableViewController, UISearchBarDelegate {
                 cell.friendsLabel.text = friendValue[indexPath.row].name
                 cell.surnameLabel.text = friendValue[indexPath.row].surname
             }
+            //        cell.friendnameLabel.text = friends[indexPath.row].friendName
+            //        cell.friendphotoImage.image = UIImage(named: friends[indexPath.row].friendImageName)
         }
         return cell
     }
@@ -101,6 +133,26 @@ class FriendsViewController: UITableViewController, UISearchBarDelegate {
             return firstNameLetter
         }
     }
+    
+    // Override to support editing the table view.
+    //    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    //        if editingStyle == .delete {
+    //            friends.remove(at: indexPath.row)
+    //            tableView.deleteRows(at: [indexPath], with: .fade)
+    //        }
+    //    }
+    
+    // MARK: - Navigation
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "Show Photo",
+//            let photoVC = segue.destination as? PhotosOfFriendsCVController,
+//            let indexPath = tableView.indexPathForSelectedRow {
+//            let friendName = friends[indexPath.row].friendName
+//
+//            photoVC.friendName = friendName
+//        }
+//    }
     
     @objc private func keyboardWasHidden(notification: Notification) {
         let contentInsets = UIEdgeInsets.zero
@@ -124,5 +176,8 @@ class FriendsViewController: UITableViewController, UISearchBarDelegate {
         hideKeyboard()
         tableView.reloadData()
     }
->>>>>>> animation
+    
 }
+
+
+
