@@ -85,7 +85,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="logInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3gl-o2-19w"/>
-                                            <segue destination="iU6-Ff-Oe2" kind="show" identifier="LogInSegue" id="ubC-f9-NOg"/>
+                                            <segue destination="VeW-1l-gaU" kind="show" id="4Pe-kM-Iyt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -152,7 +152,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2868.115942028986" y="116.51785714285714"/>
+            <point key="canvasLocation" x="1917" y="117"/>
+        </scene>
+        <!--Loading Controller-->
+        <scene sceneID="p1F-hF-tuK">
+            <objects>
+                <viewController id="VeW-1l-gaU" customClass="LoadingController" customModule="homeWork_04" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dsm-8J-TfD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Npq-ax-29O">
+                                <rect key="frame" x="141" y="433" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7uD-sA-Gqp">
+                                <rect key="frame" x="192" y="433" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.018125088720000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izj-M2-Q4s">
+                                <rect key="frame" x="242" y="433" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72284240689299839" green="1" blue="0.39164834929076509" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cps-bT-gBq">
+                                <rect key="frame" x="292" y="433" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.56319338587951528" blue="0.90759700944724264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vaO-Y9-xDa">
+                                <rect key="frame" x="90" y="433" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23750322160000001" green="0.1831522059" blue="0.68171098070000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMr-GG-I6e">
+                                <rect key="frame" x="187" y="536" width="41" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="iU6-Ff-Oe2" kind="show" id="uzB-3z-TpR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Fh6-7S-AQu"/>
+                    </view>
+                    <connections>
+                        <outlet property="elementFifth" destination="cps-bT-gBq" id="rUs-Ow-OJG"/>
+                        <outlet property="elementFirst" destination="vaO-Y9-xDa" id="a7v-1Q-hDI"/>
+                        <outlet property="elementFourth" destination="izj-M2-Q4s" id="h7R-f0-90u"/>
+                        <outlet property="elementSecond" destination="Npq-ax-29O" id="GUQ-Km-ujn"/>
+                        <outlet property="elementThird" destination="7uD-sA-Gqp" id="0eh-q9-Lab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KzV-xJ-BH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2784" y="117"/>
         </scene>
         <!--Item-->
         <scene sceneID="rEC-D0-KSd">
@@ -327,7 +385,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Wm-Tv-eUW" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2868" y="836"/>
+=======
+            <point key="canvasLocation" x="1916" y="836"/>
+>>>>>>> animation
         </scene>
         <!--Photo-->
         <scene sceneID="1lY-0Z-GZk">
@@ -361,7 +423,11 @@
                                             <rect key="frame" x="0.0" y="160" width="80" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="YMn-2Y-Mcc"/>
+<<<<<<< HEAD
                                                 <constraint firstAttribute="width" constant="80" id="mvL-6j-zi1"/>
+=======
+                                                <constraint firstAttribute="width" constant="80" id="mvL-6j-zi1" customClass="Li"/>
+>>>>>>> animation
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -392,7 +458,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="XXj-tm-bhT">
             <objects>
-                <tabBarController id="iU6-Ff-Oe2" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TBController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iU6-Ff-Oe2" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4ws-Ev-Wjx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -490,7 +556,7 @@
         <!--Friends-->
         <scene sceneID="rtT-4t-rh0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kbc-F7-vfl" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kbc-F7-vfl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" id="Fsa-jG-i9g"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lVv-Sy-9a2">
@@ -514,9 +580,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<<<<<<< HEAD
+=======
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" showsCancelButton="YES" id="4xS-vr-AMO">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="Alr-ot-hZ8" id="AGu-Wc-nwu"/>
+                            </connections>
+                        </searchBar>
+>>>>>>> animation
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendsCell" rowHeight="78" id="ccV-5B-xUu" customClass="FriendsCell" customModule="homeWork_04" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="78"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="78"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ccV-5B-xUu" id="blo-1U-COa">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="77.5"/>
@@ -608,6 +685,12 @@
                     <navigationItem key="navigationItem" title="Friends" id="Mvt-dT-d7e">
                         <barButtonItem key="backBarButtonItem" title="Back" id="VCo-2n-2FH"/>
                     </navigationItem>
+<<<<<<< HEAD
+=======
+                    <connections>
+                        <outlet property="searchBar" destination="4xS-vr-AMO" id="pYI-QA-ulQ"/>
+                    </connections>
+>>>>>>> animation
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzy-yI-FUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
